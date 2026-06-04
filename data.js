@@ -99,7 +99,7 @@ window.SWOT_DATA = {
         "Meetings, cadence, and time management",
         "Organization, roles, workflow, and systems",
       ],
-      recommendations: ["R1"],
+      recommendations: ["R1", "RX3", "RX4"],
     },
     {
       id: "W2",
@@ -146,7 +146,7 @@ window.SWOT_DATA = {
         "Meetings, cadence, and time management",
         "Student participation, commitment, and accountability",
       ],
-      recommendations: ["R2"],
+      recommendations: ["R2", "RX4"],
     },
     {
       id: "W7",
@@ -163,7 +163,7 @@ window.SWOT_DATA = {
         "Organization, roles, workflow, and systems",
         "Student participation, commitment, and accountability",
       ],
-      recommendations: ["R2"],
+      recommendations: ["R2", "RX4"],
     },
     {
       id: "W9",
@@ -184,7 +184,7 @@ window.SWOT_DATA = {
       quadrant: "Weaknesses",
       text: "LAD students decreasing the quality of yearbook - taking valuable time and not contribute much",
       themes: ["Student participation, commitment, and accountability"],
-      recommendations: ["R2"],
+      recommendations: ["R2", "RX4"],
     },
     {
       id: "W12",
@@ -194,7 +194,7 @@ window.SWOT_DATA = {
         "Training, experience, and onboarding",
         "Student participation, commitment, and accountability",
       ],
-      recommendations: [],
+      recommendations: ["RX4"],
     },
     {
       id: "W13",
@@ -218,7 +218,7 @@ window.SWOT_DATA = {
         "Meetings, cadence, and time management",
         "Morale and workload strain",
       ],
-      recommendations: ["R1"],
+      recommendations: ["R1", "RX4"],
     },
     {
       id: "W16",
@@ -249,7 +249,7 @@ window.SWOT_DATA = {
         "Meetings, cadence, and time management",
         "Morale and workload strain",
       ],
-      recommendations: ["R1"],
+      recommendations: ["R1", "RX4"],
     },
     {
       id: "O1",
@@ -301,7 +301,7 @@ window.SWOT_DATA = {
       quadrant: "Opportunities",
       text: "Two teams: \u2022Journalism \u2022Layout",
       themes: ["Organization, roles, workflow, and systems"],
-      recommendations: ["R2"],
+      recommendations: ["R2", "RX4"],
     },
     {
       id: "O8",
@@ -325,7 +325,7 @@ window.SWOT_DATA = {
       quadrant: "Opportunities",
       text: "Extensive editing and proofreading before submit.",
       themes: ["Quality control, editing, and proofreading"],
-      recommendations: ["R6"],
+      recommendations: ["R6", "RX3"],
     },
     {
       id: "O11",
@@ -388,14 +388,14 @@ window.SWOT_DATA = {
       quadrant: "Opportunities",
       text: "Streamline & systems",
       themes: ["Organization, roles, workflow, and systems"],
-      recommendations: ["R1", "R2"],
+      recommendations: ["R1", "R2", "RX4"],
     },
     {
       id: "O20",
       quadrant: "Opportunities",
       text: "Different division of labor to match abilities and interests",
       themes: ["Organization, roles, workflow, and systems"],
-      recommendations: ["R2"],
+      recommendations: ["R2", "RX4"],
     },
     {
       id: "O21",
@@ -409,14 +409,14 @@ window.SWOT_DATA = {
       quadrant: "Opportunities",
       text: "help with getting/taking pictures",
       themes: ["Student participation, commitment, and accountability"],
-      recommendations: [],
+      recommendations: ["RX4"],
     },
     {
       id: "O23",
       quadrant: "Opportunities",
       text: "proofreading team",
       themes: ["Quality control, editing, and proofreading"],
-      recommendations: ["R6"],
+      recommendations: ["R6", "RX3"],
     },
     {
       id: "O24",
@@ -492,7 +492,7 @@ window.SWOT_DATA = {
       quadrant: "Opportunities",
       text: "have better organization. like what we did in 6th grade. (layout, pictures, etc.)",
       themes: ["Organization, roles, workflow, and systems"],
-      recommendations: ["R2"],
+      recommendations: ["R2", "RX3", "RX4"],
     },
     {
       id: "O34",
@@ -513,7 +513,7 @@ window.SWOT_DATA = {
       quadrant: "Opportunities",
       text: "We should feature new yearbook people and help them.",
       themes: ["Training, experience, and onboarding"],
-      recommendations: ["R5"],
+      recommendations: ["R5", "RX4"],
     },
     {
       id: "O37",
@@ -523,7 +523,7 @@ window.SWOT_DATA = {
         "Student participation, commitment, and accountability",
         "Funding, sales, and yearbook promotion",
       ],
-      recommendations: ["R2", "R9"],
+      recommendations: ["R2", "R9", "RX4"],
     },
     {
       id: "O38",
@@ -533,7 +533,7 @@ window.SWOT_DATA = {
         "Meetings, cadence, and time management",
         "Resources, tools, and equipment",
       ],
-      recommendations: ["R1", "R5"],
+      recommendations: ["R1", "R5", "RX3"],
     },
     {
       id: "O39",
@@ -547,7 +547,7 @@ window.SWOT_DATA = {
       quadrant: "Threats",
       text: "That some people weren\u2019t doing hw",
       themes: ["Student participation, commitment, and accountability"],
-      recommendations: ["R2"],
+      recommendations: ["R2", "RX4"],
     },
     {
       id: "T2",
@@ -564,7 +564,7 @@ window.SWOT_DATA = {
       quadrant: "Threats",
       text: "better guidelines for how much and what kind of dent on  yb is acceptable",
       themes: ["Quality control, editing, and proofreading"],
-      recommendations: ["R6"],
+      recommendations: ["R6", "RX3"],
     },
     {
       id: "T4",
@@ -605,14 +605,14 @@ window.SWOT_DATA = {
         "Meetings, cadence, and time management",
         "Student participation, commitment, and accountability",
       ],
-      recommendations: ["R1", "R2"],
+      recommendations: ["R1", "R2", "RX4"],
     },
     {
       id: "T9",
       quadrant: "Threats",
       text: "lack of experience + Time",
       themes: ["Training, experience, and onboarding"],
-      recommendations: [],
+      recommendations: ["RX4"],
     },
     {
       id: "T10",
@@ -651,7 +651,7 @@ window.SWOT_DATA = {
         "Design, layout, and creative direction",
         "Quality control, editing, and proofreading",
       ],
-      recommendations: ["R6"],
+      recommendations: ["R6", "RX3", "RX4"],
     },
     {
       id: "X2",
@@ -842,6 +842,49 @@ window.SWOT_DATA = {
         "Use more written content throughout the yearbook: short school stories, student quotes, mini-features, event blurbs, classroom highlights, and captions that explain why each moment mattered. Pair that text with school-appropriate popular-culture references in layouts and headings, while intentionally covering more grades, clubs, electives, sports, classrooms, and student groups.",
       impact:
         "The yearbook becomes less like a set of isolated photos and more like a full record of the school year, with more people represented, more groups visible, and more personality in the pages.",
+    },
+    {
+      id: "RX3",
+      priority: "High",
+      title: "Standardize page templates and style rules",
+      problem:
+        "The feedback specifically calls out lack of consistency and terrible inconsistencies between pages, including fonts and backgrounds. Proofreading alone will not fix this unless the team has shared design rules, templates, and a required consistency check before pages are finalized.",
+      evidence: ["W1", "X1", "T3", "O10", "O23", "O33", "O38"],
+      action:
+        "Create a short yearbook style guide and template set before production starts: approved fonts, heading sizes, backgrounds, margins, caption formats, photo spacing, page numbering, and allowed exceptions. Require every page to use a template or get editor approval for changes, then run a consistency pass before final proofing.",
+      impact:
+        "Pages will feel like one unified yearbook instead of separate unrelated layouts, and editors can catch font, background, spacing, and formatting problems earlier.",
+    },
+    {
+      id: "RX4",
+      priority: "High",
+      title: "Market the yearbook elective to students",
+      problem:
+        "The yearbook team needs more committed students, clearer expectations, and a stronger replacement pipeline as current students leave. The same shortage creates several downstream problems: not enough production time, too much homework pressure, uneven commitment, staff turnover, fewer people collecting coverage, and inconsistent pages because the same roles are not handled by stable teams.",
+      evidence: [
+        "O37",
+        "W6",
+        "W8",
+        "W11",
+        "W12",
+        "W15",
+        "W19",
+        "O7",
+        "O19",
+        "O20",
+        "O22",
+        "O33",
+        "O36",
+        "T1",
+        "T8",
+        "T9",
+        "W1",
+        "X1",
+      ],
+      action:
+        "Market yearbook directly to students before course signups: show sample pages, explain real roles, advertise photography, writing, layout, editing, promotion, and leadership paths, and use simple incentives like candy or popcorn for recruitment events. Recruit enough students to form repeatable production teams, then assign each team the same kind of work across the book so expectations, layout choices, and quality standards stay consistent.",
+      impact:
+        "More students reduces time pressure, spreads work beyond a few people, improves photo collection, and makes it easier to replace graduating students. Stable role-based teams also improve consistency because the same groups repeatedly handle the same page types, captions, layouts, proofreading passes, or coverage areas.",
     },
     {
       id: "R1",
