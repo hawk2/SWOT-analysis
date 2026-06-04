@@ -256,14 +256,14 @@ window.SWOT_DATA = {
       quadrant: "Opportunities",
       text: "Use AI!",
       themes: ["Resources, tools, and equipment"],
-      recommendations: ["R10"],
+      recommendations: ["X1"],
     },
     {
       id: "O2",
       quadrant: "Opportunities",
       text: "more text/school stories",
       themes: ["Photo collection, missing coverage, and event representation"],
-      recommendations: ["R10"],
+      recommendations: ["X1"],
     },
     {
       id: "O3",
@@ -353,7 +353,7 @@ window.SWOT_DATA = {
       quadrant: "Opportunities",
       text: "More Yearbook Ghosts",
       themes: ["Design, layout, and creative direction"],
-      recommendations: ["R10"],
+      recommendations: ["X1"],
     },
     {
       id: "O15",
@@ -374,7 +374,7 @@ window.SWOT_DATA = {
       quadrant: "Opportunities",
       text: "introduce popular culture into look and layout designs",
       themes: ["Design, layout, and creative direction"],
-      recommendations: ["R10"],
+      recommendations: ["X1"],
     },
     {
       id: "O18",
@@ -794,7 +794,7 @@ window.SWOT_DATA = {
   ],
   recommendations: [
     {
-      id: "R10",
+      id: "X1",
       priority: "High",
       title: "Use AI as a frequent production assistant",
       problem:
@@ -920,16 +920,6 @@ window.SWOT_DATA = {
       impact: "A more inclusive yearbook with fewer overlooked groups.",
     },
     {
-      id: "R8",
-      priority: "Low",
-      title: "Preserve and reuse the cover contest model",
-      problem: "The cover contest was a clear strength worth keeping.",
-      evidence: ["S3", "S5", "S6"],
-      action:
-        "Keep the schoolwide cover contest, but set earlier submission and voting deadlines. Archive all submissions for possible use inside the book.",
-      impact: "Maintains engagement while reducing late decision pressure.",
-    },
-    {
       id: "R9",
       priority: "Low",
       title: "Explore funding and yearbook promotion",
@@ -940,6 +930,16 @@ window.SWOT_DATA = {
         "Evaluate whether a small price increase, parent ads, fundraiser, donation drive, or simple student incentives can support the program.",
       impact:
         "Improves resources while making the elective and yearbook more visible to students and families.",
+    },
+    {
+      id: "R8",
+      priority: "Low",
+      title: "Preserve and reuse the cover contest model",
+      problem: "The cover contest was a clear strength worth keeping.",
+      evidence: ["S3", "S5", "S6"],
+      action:
+        "Keep the schoolwide cover contest, but set earlier submission and voting deadlines. Archive all submissions for possible use inside the book.",
+      impact: "Maintains engagement while reducing late decision pressure.",
     },
   ],
 };
