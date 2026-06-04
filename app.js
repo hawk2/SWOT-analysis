@@ -8,6 +8,11 @@ const outcomeNotes = outcomeErrors.map(error => ({
 }));
 const notes = [...outcomeNotes, ...swotNotes];
 const quadrantOrder = ["Outcome Errors", "Strengths", "Weaknesses", "Opportunities", "Threats"];
+const orangeNoteIds = new Set([
+  "W11", "W12", "W13", "W14", "W15", "W16",
+  "O1", "O2", "O10", "O12", "O13", "O15", "O17", "O18", "O20", "O21", "O23", "O37", "O38",
+  "T3", "T8"
+]);
 
 const $ = (selector) => document.querySelector(selector);
 const pageName = document.body.dataset.page || "notes";
@@ -225,7 +230,7 @@ function renderNotes() {
   $("#resultCount").textContent = `${filtered.length} of ${notes.length} notes shown`;
 
   notesGrid.innerHTML = filtered.map(note => `
-    <article class="note-card ${note.quadrant}" id="note-${note.id}" data-id="${note.id}">
+    <article class="note-card ${note.quadrant} ${orangeNoteIds.has(note.id) ? "is-orange" : ""}" id="note-${note.id}" data-id="${note.id}">
       <a class="note-id" href="${noteHref(note.id)}">${escapeHtml(note.id)}</a>
       <div class="note-text">${escapeHtml(note.text)}</div>
       ${renderLinkGroup("Quadrant", `<a class="pill" href="${pageHref("notes")}?quadrant=${encodeURIComponent(note.quadrant)}">${escapeHtml(note.quadrant)}</a>`)}

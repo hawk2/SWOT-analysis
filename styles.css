@@ -8,9 +8,10 @@
   --accent-soft: #e6f0f6;
   --strength: #d7f2df;
   --weakness: #ffe2dd;
-  --opportunity: #fff1b8;
+  --opportunity: #e4f3ff;
   --threat: #eadcff;
-  --outcome: #fff7d8;
+  --outcome: #eef1f4;
+  --orange-postit: #fff1b8;
   --shadow: 0 16px 40px rgba(28, 30, 35, 0.08);
   --radius: 8px;
 }
@@ -220,7 +221,11 @@ button {
 .note-card.Threats { background: var(--threat); }
 .note-card.Outcome.Errors { background: var(--outcome); }
 
-.note-card.Opportunities .note-text {
+.note-card.is-orange {
+  background: var(--orange-postit);
+}
+
+.note-card.is-orange .note-text {
   font-weight: 850;
 }
 
