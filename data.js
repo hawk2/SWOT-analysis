@@ -223,7 +223,7 @@ window.SWOT_DATA = {
     {
       id: "W16",
       quadrant: "Weaknesses",
-      text: "Aggression spelling errors",
+      text: "aggregious spelling errors",
       themes: ["Quality control, editing, and proofreading"],
       recommendations: ["R6"],
     },
@@ -256,14 +256,14 @@ window.SWOT_DATA = {
       quadrant: "Opportunities",
       text: "Use AI!",
       themes: ["Resources, tools, and equipment"],
-      recommendations: ["X1"],
+      recommendations: ["RX1"],
     },
     {
       id: "O2",
       quadrant: "Opportunities",
       text: "more text/school stories",
       themes: ["Photo collection, missing coverage, and event representation"],
-      recommendations: ["X1"],
+      recommendations: ["RX2"],
     },
     {
       id: "O3",
@@ -353,7 +353,7 @@ window.SWOT_DATA = {
       quadrant: "Opportunities",
       text: "More Yearbook Ghosts",
       themes: ["Design, layout, and creative direction"],
-      recommendations: ["X1"],
+      recommendations: ["RX1"],
     },
     {
       id: "O15",
@@ -374,7 +374,7 @@ window.SWOT_DATA = {
       quadrant: "Opportunities",
       text: "introduce popular culture into look and layout designs",
       themes: ["Design, layout, and creative direction"],
-      recommendations: ["X1"],
+      recommendations: ["RX1", "RX2"],
     },
     {
       id: "O18",
@@ -794,14 +794,13 @@ window.SWOT_DATA = {
   ],
   recommendations: [
     {
-      id: "X1",
+      id: "RX1",
       priority: "High",
       title: "Use AI as a frequent production assistant",
       problem:
         "Students explicitly suggested using AI and fresher design ideas, while the feedback also points to repeated proofreading errors, inconsistent layouts, poor image cropping, rushed timelines, and workload strain. Many of these problems come from small, tedious production tasks being handled manually, inconsistently, or too late.",
       evidence: [
         "O1",
-        "O2",
         "O10",
         "O14",
         "O17",
@@ -820,6 +819,29 @@ window.SWOT_DATA = {
         "Use AI often throughout production, not just as a one-time experiment: draft and revise captions, generate school story prompts, check spelling and name consistency, flag likely layout or cropping issues, brainstorm theme and pop-culture design variations, summarize missing tasks, and create first-pass proofing notes. Keep teacher/editor approval before anything goes into print.",
       impact:
         "AI can solve several problems at once by speeding up tedious work, reducing time pressure, supporting less experienced students, improving proofreading, catching consistency and image issues earlier, creating more text and story coverage, and expanding design options while students keep final judgment and ownership.",
+    },
+    {
+      id: "RX2",
+      priority: "High",
+      title: "Use more text and school stories",
+      problem:
+        "O2 calls for more text and school stories, and other notes show that the yearbook should better reflect popular culture, student quotes, activities, classrooms, and groups across the school.",
+      evidence: [
+        "O2",
+        "O17",
+        "O18",
+        "O28",
+        "O30",
+        "O31",
+        "O34",
+        "O6",
+        "S1",
+        "S13",
+      ],
+      action:
+        "Use more written content throughout the yearbook: short school stories, student quotes, mini-features, event blurbs, classroom highlights, and captions that explain why each moment mattered. Pair that text with school-appropriate popular-culture references in layouts and headings, while intentionally covering more grades, clubs, electives, sports, classrooms, and student groups.",
+      impact:
+        "The yearbook becomes less like a set of isolated photos and more like a full record of the school year, with more people represented, more groups visible, and more personality in the pages.",
     },
     {
       id: "R1",
