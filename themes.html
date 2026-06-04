@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Static dashboard for reviewing yearbook SWOT notes, outcome errors, recurring themes, recommendations, and top recurring patterns.">
+  <title>Recurring Themes | Yearbook SWOT Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="themes">
+  <header class="hero">
+    <div>
+      <p class="eyebrow">School Yearbook Team</p>
+      <h1>Recurring Themes</h1>
+      <p class="subhead">The main patterns across the SWOT notes, linked back to their evidence and forward to related feedback.</p>
+    </div>
+    <nav class="topnav">
+      <a href="index.html" data-page="notes">Post-it Notes</a>
+      <a href="themes.html" data-page="themes">Recurring Themes</a>
+      <a href="feedback.html" data-page="feedback">Actionable Feedback</a>
+      <a href="top5.html" data-page="top5">Top 5</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="stats-grid" id="overview"></section>
+
+    <section class="panel" id="themes">
+      <div class="section-head">
+        <div>
+          <h2>Recurring Themes</h2>
+          <p>Each theme shows its supporting Post-it notes and related recommendations.</p>
+        </div>
+      </div>
+      <div id="themesGrid" class="themes-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dashboard generated from the SWOT transcription. Items marked [unclear] preserve unreadable handwriting from the source notes.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Static dashboard for reviewing yearbook SWOT notes, outcome errors, recurring themes, recommendations, and top recurring patterns.">
+  <title>Post-it Notes | Yearbook SWOT Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="notes">
+  <header class="hero">
+    <div>
+      <p class="eyebrow">School Yearbook Team</p>
+      <h1>Post-it Notes</h1>
+      <p class="subhead">Every transcribed SWOT suggestion, connected to its recurring themes, actionable feedback, and top recurring patterns.</p>
+    </div>
+    <nav class="topnav">
+      <a href="index.html" data-page="notes">Post-it Notes</a>
+      <a href="themes.html" data-page="themes">Recurring Themes</a>
+      <a href="feedback.html" data-page="feedback">Actionable Feedback</a>
+      <a href="top5.html" data-page="top5">Top 5</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="stats-grid" id="overview"></section>
+
+    <section class="panel" id="outcome-errors">
+      <div class="section-head">
+        <div>
+          <h2>Outcome Errors</h2>
+          <p>Final yearbook issues that need special attention before the next production cycle.</p>
+        </div>
+      </div>
+      <div id="outcomeErrorsGrid" class="outcome-errors-grid"></div>
+    </section>
+
+    <section class="panel controls-panel">
+      <div>
+        <h2>Explore Post-it Notes</h2>
+        <p>Search by text, note ID, quadrant, theme, or recommendation. Filters update all visible cards.</p>
+      </div>
+      <div class="controls">
+        <input id="searchInput" type="search" placeholder="Search notes, e.g. photos, time, O21, proofreading">
+        <select id="quadrantFilter">
+          <option value="all">All quadrants</option>
+          <option>Strengths</option>
+          <option>Weaknesses</option>
+          <option>Opportunities</option>
+          <option>Threats</option>
+        </select>
+        <select id="themeFilter">
+          <option value="all">All themes</option>
+        </select>
+        <select id="recFilter">
+          <option value="all">All recommendations</option>
+        </select>
+        <button id="clearFilters" type="button">Clear</button>
+      </div>
+    </section>
+
+    <section class="panel" id="notes">
+      <div class="section-head">
+        <div>
+          <h2>Individual Post-it Suggestions</h2>
+          <p id="resultCount"></p>
+        </div>
+        <div class="legend">
+          <span class="dot strength"></span> Strengths
+          <span class="dot weakness"></span> Weaknesses
+          <span class="dot opportunity"></span> Opportunities
+          <span class="dot threat"></span> Threats
+        </div>
+      </div>
+      <div id="notesGrid" class="notes-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dashboard generated from the SWOT transcription. Items marked [unclear] preserve unreadable handwriting from the source notes.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

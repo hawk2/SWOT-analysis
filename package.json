@@ -1,0 +1,13 @@
+{
+  "name": "yearbook-swot-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static dashboard for reviewing yearbook SWOT notes, themes, recommendations, and top recurring patterns.",
+  "scripts": {
+    "check": "node --check app.js && node --check data.js && node scripts/validate-data.js",
+    "serve": "python3 -m http.server 8000",
+    "test": "npm run check"
+  },
+  "devDependencies": {}
+}
+
