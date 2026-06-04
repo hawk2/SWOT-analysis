@@ -1,5 +1,13 @@
-const { notes, recommendations, outcomeErrors = [] } = window.SWOT_DATA;
+const { notes: swotNotes, recommendations, outcomeErrors = [] } = window.SWOT_DATA;
 const rawThemes = window.SWOT_DATA.themes || [];
+const outcomeNotes = outcomeErrors.map(error => ({
+  quadrant: "Outcome Errors",
+  themes: [],
+  recommendations: [],
+  ...error
+}));
+const notes = [...outcomeNotes, ...swotNotes];
+const quadrantOrder = ["Outcome Errors", "Strengths", "Weaknesses", "Opportunities", "Threats"];
 
 const $ = (selector) => document.querySelector(selector);
 const pageName = document.body.dataset.page || "notes";
@@ -113,7 +121,7 @@ function renderStats() {
     { label: "Post-it Notes", count: notes.length, page: "notes" },
     { label: "Recurring Themes", count: themes.length, page: "themes" },
     { label: "Feedback Items", count: recommendations.length, page: "feedback" },
-    { label: "SWOT Top 5", count: 4, page: "top5" }
+    { label: "SWOT/X Top 5", count: quadrantOrder.length, page: "top5" }
   ];
 
   overview.innerHTML = stats.map(item => `
@@ -180,10 +188,11 @@ function renderOutcomeErrors() {
   const grid = $("#outcomeErrorsGrid");
   if (!grid) return;
 
-  grid.innerHTML = outcomeErrors.map(error => `
+  grid.innerHTML = outcomeNotes.map(error => `
     <article class="outcome-card" id="outcome-${error.id}">
-      <a class="note-id" href="#outcome-${error.id}">${escapeHtml(error.id)}</a>
+      <a class="note-id" href="${noteHref(error.id)}">${escapeHtml(error.id)}</a>
       <div class="note-text">${escapeHtml(error.text)}</div>
+      ${renderLinkGroup("Quadrant", `<a class="pill" href="${pageHref("notes")}?quadrant=${encodeURIComponent(error.quadrant)}">${escapeHtml(error.quadrant)}</a>`)}
     </article>
   `).join("");
 }
@@ -297,8 +306,7 @@ function renderTopFive() {
   const topFiveGrid = $("#topFiveGrid");
   if (!topFiveGrid) return;
 
-  const quadrants = ["Strengths", "Weaknesses", "Opportunities", "Threats"];
-  topFiveGrid.innerHTML = quadrants.map(quadrant => {
+  topFiveGrid.innerHTML = quadrantOrder.map(quadrant => {
     const items = topThemesForQuadrant(quadrant);
 
     return `

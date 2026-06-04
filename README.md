@@ -7,7 +7,7 @@ A static dashboard for reviewing yearbook SWOT notes, outcome errors, recurring 
 - `index.html`: searchable Post-it notes and outcome errors
 - `themes.html`: recurring themes with supporting notes
 - `feedback.html`: recommendations with evidence and expected impact
-- `top5.html`: top recurring SWOT patterns by quadrant
+- `top5.html`: top recurring SWOT and outcome error patterns by quadrant
 
 ## Run Locally
 
@@ -31,7 +31,8 @@ npm test
 
 - `data.js` defines `window.SWOT_DATA`.
 - `app.js` renders each page from that shared data object.
-- Items marked `[unclear]` intentionally preserve unreadable handwriting rather than guessing.
+- Outcome errors use the `Outcome Errors` quadrant, so X notes can be searched, filtered, linked, themed, and included in Top 5 like the other SWOT quadrants.
+- Items marked `[unclear]` preserve unreadable handwriting; it is not the AI's fault, even humans could not read those parts.
 
 ## GitHub Pages
 

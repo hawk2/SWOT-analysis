@@ -884,15 +884,38 @@ window.SWOT_DATA = {
   "outcomeErrors": [
     {
       "id": "X1",
-      "text": "terrible inconsitancies between pages (fonts, backgrounds, etc.)."
+      "quadrant": "Outcome Errors",
+      "text": "terrible inconsitancies between pages (fonts, backgrounds, etc.).",
+      "themes": [
+        "Design, layout, and creative direction",
+        "Quality control, editing, and proofreading"
+      ],
+      "recommendations": [
+        "R6"
+      ]
     },
     {
       "id": "X2",
-      "text": "Many images that were badly cropped (like the literal front page)."
+      "quadrant": "Outcome Errors",
+      "text": "Many images that were badly cropped (like the literal front page).",
+      "themes": [
+        "Photo collection, missing coverage, and event representation",
+        "Quality control, editing, and proofreading"
+      ],
+      "recommendations": [
+        "R6"
+      ]
     },
     {
       "id": "X3",
-      "text": "Many aggregious typos!!!"
+      "quadrant": "Outcome Errors",
+      "text": "Many aggregious typos!!!",
+      "themes": [
+        "Quality control, editing, and proofreading"
+      ],
+      "recommendations": [
+        "R6"
+      ]
     }
   ],
   "themes": [
@@ -1155,6 +1178,9 @@ window.SWOT_DATA = {
       "title": "Create a proofreading checkpoint",
       "problem": "Errors and quality issues appeared late.",
       "evidence": [
+        "X1",
+        "X2",
+        "X3",
         "W16",
         "O10",
         "O23",

@@ -10,15 +10,16 @@ const errors = [];
 if (!data || !Array.isArray(data.notes) || !Array.isArray(data.themes) || !Array.isArray(data.recommendations)) {
   errors.push("data.js must define window.SWOT_DATA with notes, themes, and recommendations arrays.");
 } else {
-  const noteIds = new Set(data.notes.map(note => note.id));
+  const allNotes = [...(data.outcomeErrors || []), ...data.notes];
+  const noteIds = new Set(allNotes.map(note => note.id));
   const themeNames = new Set(data.themes.map(theme => theme.name));
   const recommendationIds = new Set(data.recommendations.map(rec => rec.id));
 
-  validateUnique("note", data.notes.map(note => note.id));
+  validateUnique("note", allNotes.map(note => note.id));
   validateUnique("theme", data.themes.map(theme => theme.name));
   validateUnique("recommendation", data.recommendations.map(rec => rec.id));
 
-  data.notes.forEach(note => {
+  allNotes.forEach(note => {
     required(note.id, "quadrant", note.quadrant);
     required(note.id, "text", note.text);
 
@@ -55,10 +56,7 @@ if (!data || !Array.isArray(data.notes) || !Array.isArray(data.themes) || !Array
     });
   });
 
-  (data.outcomeErrors || []).forEach(error => {
-    required(error.id, "id", error.id);
-    required(error.id, "text", error.text);
-  });
+  (data.outcomeErrors || []).forEach(error => required(error.id, "id", error.id));
 }
 
 if (errors.length) {
@@ -83,4 +81,3 @@ function validateUnique(label, values) {
     seen.add(value);
   });
 }
-

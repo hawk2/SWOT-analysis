@@ -44,6 +44,7 @@
         <input id="searchInput" type="search" placeholder="Search notes, e.g. photos, time, O21, proofreading">
         <select id="quadrantFilter">
           <option value="all">All quadrants</option>
+          <option>Outcome Errors</option>
           <option>Strengths</option>
           <option>Weaknesses</option>
           <option>Opportunities</option>
@@ -66,6 +67,7 @@
           <p id="resultCount"></p>
         </div>
         <div class="legend">
+          <span class="dot outcome"></span> Outcome Errors
           <span class="dot strength"></span> Strengths
           <span class="dot weakness"></span> Weaknesses
           <span class="dot opportunity"></span> Opportunities
@@ -77,7 +79,7 @@
   </main>
 
   <footer>
-    <p>Dashboard generated from the SWOT transcription. Items marked [unclear] preserve unreadable handwriting from the source notes.</p>
+    <p>Dashboard generated from the SWOT transcription. Items marked [unclear] preserve unreadable handwriting; it is not the AI's fault, even humans could not read those parts.</p>
   </footer>
 
   <script src="data.js"></script>

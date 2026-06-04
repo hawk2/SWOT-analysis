@@ -10,6 +10,7 @@
   --weakness: #ffe2dd;
   --opportunity: #fff1b8;
   --threat: #eadcff;
+  --outcome: #fff7d8;
   --shadow: 0 16px 40px rgba(28, 30, 35, 0.08);
   --radius: 8px;
 }
@@ -198,6 +199,7 @@ button {
 .dot.weakness { background: var(--weakness); }
 .dot.opportunity { background: var(--opportunity); }
 .dot.threat { background: var(--threat); }
+.dot.outcome { background: var(--outcome); }
 
 .notes-grid {
   display: grid;
@@ -216,6 +218,7 @@ button {
 .note-card.Weaknesses { background: var(--weakness); }
 .note-card.Opportunities { background: var(--opportunity); }
 .note-card.Threats { background: var(--threat); }
+.note-card.Outcome.Errors { background: var(--outcome); }
 
 .note-card.Opportunities .note-text {
   font-weight: 850;
@@ -352,7 +355,7 @@ button {
 .priority-grid,
 .top-five-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 14px;
 }
 
@@ -424,7 +427,7 @@ button {
 }
 
 .outcome-card {
-  background: #fff7d8;
+  background: var(--outcome);
 }
 
 .highlight {
