@@ -189,19 +189,6 @@ function renderLinkGroup(label, html) {
   `;
 }
 
-function renderOutcomeErrors() {
-  const grid = $("#outcomeErrorsGrid");
-  if (!grid) return;
-
-  grid.innerHTML = outcomeNotes.map(error => `
-    <article class="outcome-card" id="outcome-${error.id}">
-      <a class="note-id" href="${noteHref(error.id)}">${escapeHtml(error.id)}</a>
-      <div class="note-text">${escapeHtml(error.text)}</div>
-      ${renderLinkGroup("Quadrant", `<a class="pill" href="${pageHref("notes")}?quadrant=${encodeURIComponent(error.quadrant)}">${escapeHtml(error.quadrant)}</a>`)}
-    </article>
-  `).join("");
-}
-
 function renderNotes() {
   const notesGrid = $("#notesGrid");
   if (!notesGrid) return;
@@ -398,7 +385,6 @@ setActiveNav();
 renderStats();
 populateFilters();
 applyInitialFilters();
-renderOutcomeErrors();
 renderNotes();
 renderThemes();
 renderRecommendations();

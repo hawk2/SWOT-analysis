@@ -11,7 +11,7 @@
   --opportunity: #e4f3ff;
   --threat: #eadcff;
   --outcome: #eef1f4;
-  --orange-postit: #fff1b8;
+  --emphasis-highlight: #d88400;
   --shadow: 0 16px 40px rgba(28, 30, 35, 0.08);
   --radius: 8px;
 }
@@ -222,11 +222,17 @@ button {
 .note-card.Outcome.Errors { background: var(--outcome); }
 
 .note-card.is-orange {
-  background: var(--orange-postit);
+  border-color: var(--emphasis-highlight);
+  box-shadow: 0 0 0 3px rgba(216, 132, 0, 0.35);
 }
 
 .note-card.is-orange .note-text {
   font-weight: 850;
+}
+
+.note-card.is-orange .note-id {
+  border-color: var(--emphasis-highlight);
+  color: #8d5200;
 }
 
 .note-id {
@@ -274,7 +280,7 @@ button {
   gap: 14px;
 }
 
-.theme-card, .rec-card, .priority-card, .outcome-card, .top-card {
+.theme-card, .rec-card, .priority-card, .top-card {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: white;
@@ -425,16 +431,6 @@ button {
   font-size: 0.82rem;
 }
 
-.outcome-errors-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.outcome-card {
-  background: var(--outcome);
-}
-
 .highlight {
   outline: 4px solid #2f5f7f;
   outline-offset: 3px;
@@ -472,8 +468,7 @@ footer {
   }
 
   .priority-grid,
-  .top-five-grid,
-  .outcome-errors-grid {
+  .top-five-grid {
     grid-template-columns: 1fr;
   }
 }
